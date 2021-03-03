@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/sim
+valu
+!s110 1613724844
+!i10b 1
+!s100 PC<j27TLPT;jkF5RH1Qcn3
+Ik[BAYRb[bK66P>AXI>>TN2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/sim
+Z2 w1524785032
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/rtl/alu.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/rtl/alu.v
+L0 29
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1613724844.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/rtl/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/rtl/alu.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+valu_tb
+!s110 1613724845
+!i10b 1
+!s100 gU4hWNl][9;=:eTk5S64B2
+IDmV9RMRnOC`3[I@ZW8aE61
+R0
+R1
+R2
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/tb/alu_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/tb/alu_tb.v
+L0 28
+R3
+r1
+!s85 0
+31
+!s108 1613724845.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/tb/alu_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/tb/alu_tb.v|
+!i113 1
+R4
+R5

@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vfull_adder
+Z0 !s110 1613639386
+!i10b 1
+!s100 0OhP;F`4a@1L5lI[j6DZG0
+IzW^0<QXI7MDSn0l5FRjfg0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/sim
+Z3 w1524785032
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/full_adder.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/full_adder.v
+Z4 L0 29
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1613639386.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/full_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/full_adder.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vfull_adder_tb
+!s110 1613639387
+!i10b 1
+!s100 68j85V:;IoBKESFN0J8C01
+I`VDF32WH0[PQQEUI_n^7z0
+R1
+R2
+Z9 w1524785030
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/full_adder_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/full_adder_tb.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/full_adder_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/full_adder_tb.v|
+!i113 1
+R7
+R8
+vhalf_adder
+R0
+!i10b 1
+!s100 `]M1FfSQT_L;J?e]k1IBD3
+IFJaXlSSAHfFf?=;Ob>T>[3
+R1
+R2
+R3
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/half_adder.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/half_adder.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/half_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/half_adder.v|
+!i113 1
+R7
+R8
+vhalf_adder_tb
+!s110 1613637695
+!i10b 1
+!s100 cK[fhO`=FK1EoANEh]_GE0
+IDAL4]Tzl8AKX`j7ZJ:6gf1
+R1
+R2
+R9
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/half_adder_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/half_adder_tb.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1613637695.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/half_adder_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/half_adder_tb.v|
+!i113 1
+R7
+R8

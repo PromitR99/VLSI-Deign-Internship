@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vcounter
+Z0 !s110 1613630767
+!i10b 1
+!s100 3?F0KzONgd6z;R5k_6e9f0
+I7bz]_Oj17C<6Kj6al05;51
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Maven Silicon/Practicals/ModelSim/sample_simulation
+Z3 w1475690574
+8C:/intelFPGA_lite/18.0/modelsim_ase/examples/tutorials/verilog/projects/counter.v
+FC:/intelFPGA_lite/18.0/modelsim_ase/examples/tutorials/verilog/projects/counter.v
+Z4 L0 10
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1613630767.000000
+!s107 C:/intelFPGA_lite/18.0/modelsim_ase/examples/tutorials/verilog/projects/counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.0/modelsim_ase/examples/tutorials/verilog/projects/counter.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vtest_counter
+R0
+!i10b 1
+!s100 W1XRSIW<YX:kRUTWR:NVX3
+IFT`gRmL?iVG1H[C1d4G]O2
+R1
+R2
+R3
+8C:/intelFPGA_lite/18.0/modelsim_ase/examples/tutorials/verilog/projects/tcounter.v
+FC:/intelFPGA_lite/18.0/modelsim_ase/examples/tutorials/verilog/projects/tcounter.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/intelFPGA_lite/18.0/modelsim_ase/examples/tutorials/verilog/projects/tcounter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/intelFPGA_lite/18.0/modelsim_ase/examples/tutorials/verilog/projects/tcounter.v|
+!i113 1
+R7
+R8

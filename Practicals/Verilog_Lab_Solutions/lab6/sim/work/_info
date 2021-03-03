@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/sim
+vseq_det
+Z0 !s110 1614602107
+!i10b 1
+!s100 6GjCAhIQ;3LFLGG]0MJ:43
+IIPNeXD^=zYj8hH@JKf;E@3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/sim
+Z3 w1524785030
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/rtl/seq_det.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/rtl/seq_det.v
+Z4 L0 29
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1614602107.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/rtl/seq_det.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/rtl/seq_det.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vseq_det_tb
+R0
+!i10b 1
+!s100 EXECjjOPEbl@D]OZ:Qg]E2
+I@2m77iBUJaCKOhczYcb813
+R1
+R2
+R3
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/tb/seq_det_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/tb/seq_det_tb.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/tb/seq_det_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/tb/seq_det_tb.v|
+!i113 1
+R7
+R8

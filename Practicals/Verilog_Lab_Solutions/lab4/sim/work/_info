@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vd_ff
+Z0 !s110 1614598766
+!i10b 1
+!s100 aFOe6gKB_Uoe9o;4Yf8ki1
+IQG@[20HgNGgkU8ooGgL_@2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/sim
+Z3 w1524785030
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/rtl/dff.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/rtl/dff.v
+Z4 L0 29
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1614598764.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/rtl/dff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/rtl/dff.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vdff_tb
+R0
+!i10b 1
+!s100 dB1>F]jI7F[?G]M;GG8<k1
+I6Hj?<D6N;9OD[^X6o_EJ70
+R1
+R2
+R3
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/tb/dff_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/tb/dff_tb.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1614598766.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/tb/dff_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/tb/dff_tb.v|
+!i113 1
+R6
+R7
