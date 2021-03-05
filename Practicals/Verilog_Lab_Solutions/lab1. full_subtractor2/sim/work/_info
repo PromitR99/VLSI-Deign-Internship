@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vfull_subtractor
+Z0 !s110 1614851294
+!i10b 1
+!s100 G^_8?8>KBg5b:HA4Jjh]13
+IDhQHUj7OB6_D;KS5fJi]c3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/sim
+w1614851284
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/rtl/full_subtractor.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/rtl/full_subtractor.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1614851294.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/rtl/full_subtractor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/rtl/full_subtractor.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vfull_subtractor_tb
+R0
+!i10b 1
+!s100 =_?C?@GYPdmniS4mYm;d;0
+IV?kcOzK83J>f5znci]2h`2
+R1
+R2
+w1614795650
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/tb/full_subtractor_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/tb/full_subtractor_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/tb/full_subtractor_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/tb/full_subtractor_tb.v|
+!i113 1
+R5
+R6
+vhalf_subtractor
+!s110 1614851293
+!i10b 1
+!s100 `6ojXAcj8hQNcaAk:JAeD1
+IKlJEMMm;n@gHGTnQ73=g;3
+R1
+R2
+w1614793128
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/rtl/half_subtractor.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/rtl/half_subtractor.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1614851293.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/rtl/half_subtractor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/rtl/half_subtractor.v|
+!i113 1
+R5
+R6
+vhalf_subtractor_tb
+R0
+!i10b 1
+!s100 YAC2JegfOJDoI7QkfmhSX3
+ILL1iaY2NEOAac@lLBDVzn0
+R1
+R2
+w1614793254
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/tb/half_subtractor_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/tb/half_subtractor_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/tb/half_subtractor_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_subtractor2/tb/half_subtractor_tb.v|
+!i113 1
+R5
+R6

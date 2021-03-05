@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab6/sim
+vfull_adder2
+Z0 !s110 1614769810
+!i10b 1
+!s100 9ca7OIW<6VMY^^Kd2<>K50
+ICc;VT6Z?e2fRRfb5ASm<d1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/sim
+w1614769032
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/rtl/full_adder2.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/rtl/full_adder2.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1614769810.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/rtl/full_adder2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/rtl/full_adder2.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vfull_adder2_tb
+R0
+!i10b 1
+!s100 XJAZGJj^_Pmc1?U6WM8=R1
+IISMhhE:mL@ONFA^YTl`S=2
+R1
+R2
+w1614769345
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/tb/full_adder2_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/tb/full_adder2_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/tb/full_adder2_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder2/tb/full_adder2_tb.v|
+!i113 1
+R5
+R6

@@ -1,0 +1,13 @@
+module full_subtractor(a,
+                       b,
+                       b_in,
+                       diff,
+                       borrow);
+     
+  input a,b,b_in;
+  output diff, borrow;
+
+  assign diff = (a ^ b) ^ c;
+  assign borrow = (~a & b) | (b & c) | (~a & c);
+
+endmodule

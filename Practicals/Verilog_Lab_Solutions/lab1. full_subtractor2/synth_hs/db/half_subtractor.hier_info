@@ -1,0 +1,9 @@
+|half_subtractor
+a => diff.IN0
+a => borrow.IN0
+b => diff.IN1
+b => borrow.IN1
+diff <= diff.DB_MAX_OUTPUT_PORT_TYPE
+borrow <= borrow.DB_MAX_OUTPUT_PORT_TYPE
+
+
