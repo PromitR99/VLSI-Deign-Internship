@@ -11,16 +11,18 @@ module dff_tb();
 
 // Step 2. Instantiate the dff design       
 
-  d_ff DUT (.clk(clk),.reset(reset),.d(d),.q(q),.qb(qb));
+  dff DUT (.clk(clk),.reset(reset),.d(d),.q(q),.qb(qb));
 
 
 // Step 3. Understand the clock generation logic
 
+  initial
+  begin
+    clk = 1'b0;
+  end
 
   always
   begin
-    #(cycle/2);
-      clk = 1'b0;
     #(cycle/2);
       clk=~clk;
   end

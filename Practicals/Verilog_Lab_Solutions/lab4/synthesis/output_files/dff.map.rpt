@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dff
-Sat Mar 06 16:46:44 2021
+Sat Mar 06 23:25:34 2021
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sat Mar 06 16:46:44 2021           ;
+; Analysis & Synthesis Status ; Failed - Sat Mar 06 23:25:34 2021           ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; dff                                         ;
 ; Top-level Entity Name       ; dff                                         ;
@@ -160,18 +160,18 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sat Mar 06 16:46:31 2021
+    Info: Processing started: Sat Mar 06 23:25:23 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dff -c dff
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (12018): Entity "dff" will be ignored because it conflicts with Quartus Prime primitive name File: D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/rtl/dff.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /maven silicon/practicals/verilog_lab_solutions/lab4/rtl/dff.v
-    Info (12023): Found entity 1: d_ff File: D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/rtl/dff.v Line: 1
 Warning (12018): Entity "dff" will be ignored because it conflicts with Quartus Prime primitive name
 Error (12007): Top-level design entity "dff" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
-    Error: Peak virtual memory: 4775 megabytes
-    Error: Processing ended: Sat Mar 06 16:46:44 2021
-    Error: Elapsed time: 00:00:13
-    Error: Total CPU time (on all processors): 00:00:25
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 3 warnings
+    Error: Peak virtual memory: 4774 megabytes
+    Error: Processing ended: Sat Mar 06 23:25:34 2021
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:24
 
 

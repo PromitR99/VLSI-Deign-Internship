@@ -1,0 +1,16 @@
+|pe4_2
+a[0] => Equal0.IN0
+a[1] => Equal0.IN3
+a[1] => Equal1.IN0
+a[2] => Equal0.IN2
+a[2] => Equal1.IN2
+a[2] => Equal2.IN0
+a[3] => valid.DATAA
+a[3] => Equal0.IN1
+a[3] => Equal1.IN1
+a[3] => Equal2.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+valid <= valid.DB_MAX_OUTPUT_PORT_TYPE
+
+

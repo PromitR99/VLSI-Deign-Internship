@@ -1,0 +1,70 @@
+module jkff_tb();
+
+// Step 1. Define a parameter with name "cycle" which is equal to 10  
+  parameter cycle=10;		
+
+  reg clk,
+      reset,
+      j,
+      k;
+  wire q,
+       qb;
+
+  integer i;
+
+// Step 2. Instantiate the dff design       
+
+  jkff DUT (.clk(clk),.reset(reset),.j(j),.k(k),.q(q),.qb(qb));
+
+
+// Step 3. Understand the clock generation logic
+
+  initial
+  begin
+    clk = 1'b0;
+  end
+
+  always
+  begin
+    #(cycle/2);
+      clk=~clk;
+  end
+
+//Step4. Understand the various tasks used and also how to use tasks in testbench.
+
+  task rst_dut();
+  begin
+    reset=1'b1;
+    #10;
+    reset=1'b0;
+  end
+  endtask
+
+  task jkin(input i);
+  begin
+    @(negedge clk);
+    {j,k}=i;
+  end
+  endtask
+           
+  initial 
+  begin
+    rst_dut;
+    jkin(0);
+    jkin(1);
+    jkin(2);
+    jkin(3);
+    jkin(0);
+    rst_dut;
+    jkin(1);
+    jkin(2);
+    #10;
+    $finish;
+  end
+
+// Step 5. Use $monitor task in a parallel initial block to display inputs and outputs
+
+  initial
+    $monitor("j=%d--k=%d--q=%d--qb=%d",j,k,q,qb);
+
+endmodule

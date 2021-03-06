@@ -1,5 +1,5 @@
 Flow report for dff
-Sat Mar 06 16:46:44 2021
+Sat Mar 06 23:25:34 2021
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Sat Mar 06 16:46:44 2021      ;
+; Flow Status                 ; Flow Failed - Sat Mar 06 23:25:34 2021      ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; dff                                         ;
 ; Top-level Entity Name       ; dff                                         ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/06/2021 16:46:33 ;
+; Start date & time ; 03/06/2021 23:25:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; dff                 ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 198363619945014.161502939258868        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 198363619945014.161505332452844        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -88,8 +88,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4775 MB             ; 00:00:25                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:25                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4774 MB             ; 00:00:24                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:24                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

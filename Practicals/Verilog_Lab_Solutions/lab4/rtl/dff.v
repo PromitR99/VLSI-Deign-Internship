@@ -1,4 +1,4 @@
-module d_ff(clk,
+module dff(clk,
            reset,
            d,
            q,
@@ -25,5 +25,3 @@ module d_ff(clk,
   assign qb=~q;       
 
 endmodule         
-
-

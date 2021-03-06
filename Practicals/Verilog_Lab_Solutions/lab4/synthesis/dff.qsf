@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-# Date created = 16:46:18  March 06, 2021
+# Date created = 23:25:14  March 06, 2021
 #
 # -------------------------------------------------------------------------- #
 #
@@ -40,7 +40,7 @@ set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
 set_global_assignment -name TOP_LEVEL_ENTITY dff
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:46:18  MARCH 06, 2021"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:25:14  MARCH 06, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
 set_global_assignment -name VERILOG_FILE ../rtl/dff.v
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
