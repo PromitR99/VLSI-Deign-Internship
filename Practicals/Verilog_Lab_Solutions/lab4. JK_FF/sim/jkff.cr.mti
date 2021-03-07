@@ -1,0 +1,15 @@
+{D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. JK_FF/tb/jkff_tb.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. JK_FF/tb/jkff_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module jk_ff_tb
+
+Top level modules:
+	jk_ff_tb
+
+} {} {}} {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. JK_FF/rtl/jkff.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. JK_FF/rtl/jkff.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module jk_ff
+
+Top level modules:
+	jk_ff
+
+} {} {}}

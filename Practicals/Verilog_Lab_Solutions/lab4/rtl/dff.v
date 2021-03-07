@@ -1,4 +1,4 @@
-module dff(clk,
+module d_ff(clk,
            reset,
            d,
            q,

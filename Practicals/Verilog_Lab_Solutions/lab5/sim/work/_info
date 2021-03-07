@@ -9,44 +9,44 @@ z2
 cModel Technology
 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/sim
 vram
-Z0 !s110 1614600773
+Z0 !s110 1615096186
 !i10b 1
-!s100 o8?22>WEO`l;_BDTX^fBN2
-I5z4:3ak80bgKTCbn;CC7l2
+!s100 Zk5@BY_E8K;]OB7nfTTDc3
+I9foR=6kCcbj_B2CL@mkGl3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/sim
-Z3 w1524785030
-8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/rtl/ram.v
-FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/rtl/ram.v
-Z4 L0 29
-Z5 OV;L;10.5b;63
+w1615002296
+8D:\Maven Silicon\Practicals\Verilog_Lab_Solutions\lab5\rtl\ram.v
+FD:\Maven Silicon\Practicals\Verilog_Lab_Solutions\lab5\rtl\ram.v
+L0 1
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1614600773.000000
-!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/rtl/ram.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/rtl/ram.v|
+!s108 1615096185.000000
+!s107 D:\Maven Silicon\Practicals\Verilog_Lab_Solutions\lab5\rtl\ram.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Maven Silicon\Practicals\Verilog_Lab_Solutions\lab5\rtl\ram.v|
 !i113 1
-Z7 o-work work
-Z8 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 vram_tb
 R0
 !i10b 1
-!s100 KzjBlQ?W8<D8<=>z=6HmJ0
-I9QTGVBLP?H1999QAz8[o33
+!s100 zL3DQZ[eFE9:[mXPg@<bl0
+I?CVh?Cm07ZmNf_P`eBQPd0
 R1
 R2
-R3
+w1615002303
 8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/tb/ram_tb.v
 FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/tb/ram_tb.v
-R4
-R5
+L0 1
+R3
 r1
 !s85 0
 31
-R6
+!s108 1615096186.000000
 !s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/tb/ram_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab5/tb/ram_tb.v|
 !i113 1
-R7
-R8
+R4
+R5

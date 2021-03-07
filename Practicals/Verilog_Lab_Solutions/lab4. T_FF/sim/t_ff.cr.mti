@@ -1,0 +1,15 @@
+{D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. T_FF/rtl/tff.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. T_FF/rtl/tff.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t_ff
+
+Top level modules:
+	t_ff
+
+} {} {}} {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. T_FF/tb/tff_tb.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. T_FF/tb/tff_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module t_ff_tb
+
+Top level modules:
+	t_ff_tb
+
+} {} {}}
