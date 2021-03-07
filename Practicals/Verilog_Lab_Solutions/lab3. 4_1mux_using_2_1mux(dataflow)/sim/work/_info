@@ -9,13 +9,13 @@ z2
 cModel Technology
 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3/sim
 vmux2_1
-!s110 1615003483
+!s110 1615090043
 !i10b 1
-!s100 E:N8ni:<aM;oWWbcgMYZk1
-Ig2WI:Q=zaKXE9Oe:G:z<42
+!s100 a;jP4ij:CSa6T?nPD8BT<3
+IcBK_i;0^JJH=hAHz1MK5G0
 Z0 VDg1SIo80bB@j0V0VzS_@n1
 Z1 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/sim
-w1615003205
+w1615090035
 8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/rtl/mux2_1.v
 FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/rtl/mux2_1.v
 L0 1
@@ -23,14 +23,14 @@ Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1615003483.000000
+Z3 !s108 1615090043.000000
 !s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/rtl/mux2_1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/rtl/mux2_1.v|
 !i113 1
-Z3 o-work work
-Z4 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 vmux2_1_tb
-Z5 !s110 1615003484
+Z6 !s110 1615090044
 !i10b 1
 !s100 gUSU?UC6ODYQM]BH<9[4C1
 Im[8iMn5GEWgRPXc[aec0D2
@@ -44,35 +44,35 @@ R2
 r1
 !s85 0
 31
-Z6 !s108 1615003484.000000
+R3
 !s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/tb/mux2_1_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/tb/mux2_1_tb.v|
 !i113 1
-R3
 R4
-vmux4_1
 R5
+vmux4_1
+R6
 !i10b 1
 !s100 VH<1XDO_nPf7lbX;G:m6[2
-I@3]cP31AbJa1`k]nn]Ooa2
+I2TMhOc=1b4^h7Q@>UKneA3
 R0
 R1
 w1615001854
-8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/rtl/mux4_1.v
-FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/rtl/mux4_1.v
+8D:\Maven Silicon\Practicals\Verilog_Lab_Solutions\lab3. 4_1mux_using_2_1mux(dataflow)\rtl\mux4_1.v
+FD:\Maven Silicon\Practicals\Verilog_Lab_Solutions\lab3. 4_1mux_using_2_1mux(dataflow)\rtl\mux4_1.v
 L0 1
 R2
 r1
 !s85 0
 31
-R6
-!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/rtl/mux4_1.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/rtl/mux4_1.v|
+Z7 !s108 1615090044.000000
+!s107 D:\Maven Silicon\Practicals\Verilog_Lab_Solutions\lab3. 4_1mux_using_2_1mux(dataflow)\rtl\mux4_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Maven Silicon\Practicals\Verilog_Lab_Solutions\lab3. 4_1mux_using_2_1mux(dataflow)\rtl\mux4_1.v|
 !i113 1
-R3
 R4
-vmux4_1_tb
 R5
+vmux4_1_tb
+R6
 !i10b 1
 !s100 WMG4Re0bXKoBQ@[IH:VDS3
 Iz8JRg;TObRj<YEL6nABP[0
@@ -86,9 +86,9 @@ R2
 r1
 !s85 0
 31
-R6
+R7
 !s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/tb/mux4_1_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab3. 4_1mux_using_2_1mux(dataflow)/tb/mux4_1_tb.v|
 !i113 1
-R3
 R4
+R5

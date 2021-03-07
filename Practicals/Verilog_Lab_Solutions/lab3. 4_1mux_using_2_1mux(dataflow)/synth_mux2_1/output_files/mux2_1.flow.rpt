@@ -1,5 +1,5 @@
 Flow report for mux2_1
-Sat Mar 06 00:36:13 2021
+Sun Mar 07 09:47:33 2021
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat Mar 06 00:36:05 2021       ;
+; Flow Status                     ; Successful - Sun Mar 07 09:47:24 2021       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; mux2_1                                      ;
 ; Top-level Entity Name           ; mux2_1                                      ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/06/2021 00:35:03 ;
+; Start date & time ; 03/07/2021 09:46:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mux2_1              ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 198363619945014.161497110337948        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 198363619945014.161509056953808        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -93,11 +93,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4823 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:37     ; 1.0                     ; 6692 MB             ; 00:01:08                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4821 MB             ; 00:00:25                           ;
+; Fitter               ; 00:00:43     ; 1.0                     ; 6741 MB             ; 00:01:01                           ;
 ; Assembler            ; 00:00:10     ; 1.0                     ; 4824 MB             ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:07     ; 1.0                     ; 5175 MB             ; 00:00:06                           ;
-; Total                ; 00:01:06     ; --                      ; --                  ; 00:01:47                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.0                     ; 5176 MB             ; 00:00:06                           ;
+; Total                ; 00:01:16     ; --                      ; --                  ; 00:01:40                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

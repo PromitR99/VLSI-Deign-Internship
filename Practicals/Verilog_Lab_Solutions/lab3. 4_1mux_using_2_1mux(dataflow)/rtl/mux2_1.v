@@ -15,8 +15,8 @@ module mux2_1(a,
   always@(*)	
   begin
     case(sel)
-      1'd0:y=a[0];
-      1'd1:y=a[1];
+      1'b0:y=a[0];
+      1'b1:y=a[1];
     endcase
   end
 
