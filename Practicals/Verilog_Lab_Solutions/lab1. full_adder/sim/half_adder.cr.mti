@@ -1,11 +1,11 @@
-{D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/half_adder_tb.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/tb/half_adder_tb.v}
+{D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder/tb/half_adder_tb.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder/tb/half_adder_tb.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module half_adder_tb
 
 Top level modules:
 	half_adder_tb
 
-} {} {}} {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/half_adder.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/rtl/half_adder.v}
+} {} {}} {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder/rtl/half_adder.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder/rtl/half_adder.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module half_adder
 

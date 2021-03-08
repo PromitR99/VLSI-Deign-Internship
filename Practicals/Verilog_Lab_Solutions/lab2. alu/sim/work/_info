@@ -7,25 +7,25 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1/sim
+dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab1. full_adder/sim
 valu
-Z0 !s110 1615058463
+Z0 !s110 1615173286
 !i10b 1
 !s100 :hMj@e?1bYI5XbhU7Q4A?1
-Im`=QjGAP?FWanfUY^:zL83
+IIS>PhSWMnJ0beihZiUTaH2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/sim
+Z2 dD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/sim
 w1615002146
-8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/rtl/alu.v
-FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/rtl/alu.v
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/rtl/alu.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/rtl/alu.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1615058463.000000
-!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/rtl/alu.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/rtl/alu.v|
+Z4 !s108 1615173286.000000
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/rtl/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/rtl/alu.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
@@ -33,20 +33,20 @@ valu_tb
 R0
 !i10b 1
 !s100 kEfWOb^ZBIf7l;3<9cOn>2
-IAfIIRjdeF`LKFlWIU^JJz3
+I7J?`D1KzXbPT_IU9SAh@`2
 R1
 R2
 w1615002151
-8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/tb/alu_tb.v
-FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/tb/alu_tb.v
+8D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/tb/alu_tb.v
+FD:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/tb/alu_tb.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/tb/alu_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2/tb/alu_tb.v|
+!s107 D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/tb/alu_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab2. alu/tb/alu_tb.v|
 !i113 1
 R5
 R6

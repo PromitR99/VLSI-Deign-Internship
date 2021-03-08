@@ -1,11 +1,11 @@
-{D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/rtl/dff.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/rtl/dff.v}
+{D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. D_FF/rtl/dff.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. D_FF/rtl/dff.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module d_ff
 
 Top level modules:
 	d_ff
 
-} {} {}} {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/tb/dff_tb.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4/tb/dff_tb.v}
+} {} {}} {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. D_FF/tb/dff_tb.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Practicals/Verilog_Lab_Solutions/lab4. D_FF/tb/dff_tb.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module d_ff_tb
 
