@@ -1,0 +1,11 @@
+
+State Machine - |bridge_top|apb_fsm:M2|present_state
+Name present_state.ST_WENABLEP present_state.ST_WENABLE present_state.ST_RENABLE present_state.ST_WRITEP present_state.ST_WRITE present_state.ST_READ present_state.ST_WWAIT present_state.ST_IDLE 
+present_state.ST_IDLE 0 0 0 0 0 0 0 0 
+present_state.ST_WWAIT 0 0 0 0 0 0 1 1 
+present_state.ST_READ 0 0 0 0 0 1 0 1 
+present_state.ST_WRITE 0 0 0 0 1 0 0 1 
+present_state.ST_WRITEP 0 0 0 1 0 0 0 1 
+present_state.ST_RENABLE 0 0 1 0 0 0 0 1 
+present_state.ST_WENABLE 0 1 0 0 0 0 0 1 
+present_state.ST_WENABLEP 1 0 0 0 0 0 0 1 

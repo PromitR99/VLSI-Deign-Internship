@@ -1,0 +1,713 @@
+Analysis & Synthesis report for apb_fsm
+Thu Mar 18 10:14:56 2021
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |apb_fsm|present_state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |apb_fsm
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Mar 18 10:14:56 2021       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                   ; apb_fsm                                     ;
+; Top-level Entity Name           ; apb_fsm                                     ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 8                                           ;
+; Total pins                      ; 272                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; apb_fsm            ; apb_fsm            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                         ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path           ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
+; ../rtl/apb_fsm.v                 ; yes             ; User Verilog HDL File  ; D:/Maven Silicon/Project/rtl/apb_fsm.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
+
+
++---------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                         ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimate of Logic utilization (ALMs needed) ; 76                    ;
+;                                             ;                       ;
+; Combinational ALUT usage for logic          ; 150                   ;
+;     -- 7 input functions                    ; 0                     ;
+;     -- 6 input functions                    ; 2                     ;
+;     -- 5 input functions                    ; 3                     ;
+;     -- 4 input functions                    ; 1                     ;
+;     -- <=3 input functions                  ; 144                   ;
+;                                             ;                       ;
+; Dedicated logic registers                   ; 8                     ;
+;                                             ;                       ;
+; I/O pins                                    ; 272                   ;
+;                                             ;                       ;
+; Total DSP Blocks                            ; 0                     ;
+;                                             ;                       ;
+; Maximum fan-out node                        ; present_state.ST_IDLE ;
+; Maximum fan-out                             ; 71                    ;
+; Total fan-out                               ; 782                   ;
+; Average fan-out                             ; 1.11                  ;
++---------------------------------------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |apb_fsm                   ; 150 (150)           ; 8 (8)                     ; 0                 ; 0          ; 272  ; 0            ; |apb_fsm            ; apb_fsm     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |apb_fsm|present_state                                                                                                                                                                                                  ;
++---------------------------+---------------------------+--------------------------+--------------------------+-------------------------+------------------------+-----------------------+------------------------+-----------------------+
+; Name                      ; present_state.ST_WENABLEP ; present_state.ST_WENABLE ; present_state.ST_RENABLE ; present_state.ST_WRITEP ; present_state.ST_WRITE ; present_state.ST_READ ; present_state.ST_WWAIT ; present_state.ST_IDLE ;
++---------------------------+---------------------------+--------------------------+--------------------------+-------------------------+------------------------+-----------------------+------------------------+-----------------------+
+; present_state.ST_IDLE     ; 0                         ; 0                        ; 0                        ; 0                       ; 0                      ; 0                     ; 0                      ; 0                     ;
+; present_state.ST_WWAIT    ; 0                         ; 0                        ; 0                        ; 0                       ; 0                      ; 0                     ; 1                      ; 1                     ;
+; present_state.ST_READ     ; 0                         ; 0                        ; 0                        ; 0                       ; 0                      ; 1                     ; 0                      ; 1                     ;
+; present_state.ST_WRITE    ; 0                         ; 0                        ; 0                        ; 0                       ; 1                      ; 0                     ; 0                      ; 1                     ;
+; present_state.ST_WRITEP   ; 0                         ; 0                        ; 0                        ; 1                       ; 0                      ; 0                     ; 0                      ; 1                     ;
+; present_state.ST_RENABLE  ; 0                         ; 0                        ; 1                        ; 0                       ; 0                      ; 0                     ; 0                      ; 1                     ;
+; present_state.ST_WENABLE  ; 0                         ; 1                        ; 0                        ; 0                       ; 0                      ; 0                     ; 0                      ; 1                     ;
+; present_state.ST_WENABLEP ; 1                         ; 0                        ; 0                        ; 0                       ; 0                      ; 0                     ; 0                      ; 1                     ;
++---------------------------+---------------------------+--------------------------+--------------------------+-------------------------+------------------------+-----------------------+------------------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; pwrite$latch                                        ; WideOr4             ; yes                    ;
+; penable$latch                                       ; WideOr1             ; yes                    ;
+; psel[0]$latch                                       ; psel                ; yes                    ;
+; psel[1]$latch                                       ; psel                ; yes                    ;
+; psel[2]$latch                                       ; psel                ; yes                    ;
+; paddr[0]$latch                                      ; psel                ; yes                    ;
+; paddr[1]$latch                                      ; psel                ; yes                    ;
+; paddr[2]$latch                                      ; psel                ; yes                    ;
+; paddr[3]$latch                                      ; psel                ; yes                    ;
+; paddr[4]$latch                                      ; psel                ; yes                    ;
+; paddr[5]$latch                                      ; psel                ; yes                    ;
+; paddr[6]$latch                                      ; psel                ; yes                    ;
+; paddr[7]$latch                                      ; psel                ; yes                    ;
+; paddr[8]$latch                                      ; psel                ; yes                    ;
+; paddr[9]$latch                                      ; psel                ; yes                    ;
+; paddr[10]$latch                                     ; psel                ; yes                    ;
+; paddr[11]$latch                                     ; psel                ; yes                    ;
+; paddr[12]$latch                                     ; psel                ; yes                    ;
+; paddr[13]$latch                                     ; psel                ; yes                    ;
+; paddr[14]$latch                                     ; psel                ; yes                    ;
+; paddr[15]$latch                                     ; psel                ; yes                    ;
+; paddr[16]$latch                                     ; psel                ; yes                    ;
+; paddr[17]$latch                                     ; psel                ; yes                    ;
+; paddr[18]$latch                                     ; psel                ; yes                    ;
+; paddr[19]$latch                                     ; psel                ; yes                    ;
+; paddr[20]$latch                                     ; psel                ; yes                    ;
+; paddr[21]$latch                                     ; psel                ; yes                    ;
+; paddr[22]$latch                                     ; psel                ; yes                    ;
+; paddr[23]$latch                                     ; psel                ; yes                    ;
+; paddr[24]$latch                                     ; psel                ; yes                    ;
+; paddr[25]$latch                                     ; psel                ; yes                    ;
+; paddr[26]$latch                                     ; psel                ; yes                    ;
+; paddr[27]$latch                                     ; psel                ; yes                    ;
+; paddr[28]$latch                                     ; psel                ; yes                    ;
+; paddr[29]$latch                                     ; psel                ; yes                    ;
+; paddr[30]$latch                                     ; psel                ; yes                    ;
+; paddr[31]$latch                                     ; psel                ; yes                    ;
+; pwdata[0]$latch                                     ; psel                ; yes                    ;
+; pwdata[1]$latch                                     ; psel                ; yes                    ;
+; pwdata[2]$latch                                     ; psel                ; yes                    ;
+; pwdata[3]$latch                                     ; psel                ; yes                    ;
+; pwdata[4]$latch                                     ; psel                ; yes                    ;
+; pwdata[5]$latch                                     ; psel                ; yes                    ;
+; pwdata[6]$latch                                     ; psel                ; yes                    ;
+; pwdata[7]$latch                                     ; psel                ; yes                    ;
+; pwdata[8]$latch                                     ; psel                ; yes                    ;
+; pwdata[9]$latch                                     ; psel                ; yes                    ;
+; pwdata[10]$latch                                    ; psel                ; yes                    ;
+; pwdata[11]$latch                                    ; psel                ; yes                    ;
+; pwdata[12]$latch                                    ; psel                ; yes                    ;
+; pwdata[13]$latch                                    ; psel                ; yes                    ;
+; pwdata[14]$latch                                    ; psel                ; yes                    ;
+; pwdata[15]$latch                                    ; psel                ; yes                    ;
+; pwdata[16]$latch                                    ; psel                ; yes                    ;
+; pwdata[17]$latch                                    ; psel                ; yes                    ;
+; pwdata[18]$latch                                    ; psel                ; yes                    ;
+; pwdata[19]$latch                                    ; psel                ; yes                    ;
+; pwdata[20]$latch                                    ; psel                ; yes                    ;
+; pwdata[21]$latch                                    ; psel                ; yes                    ;
+; pwdata[22]$latch                                    ; psel                ; yes                    ;
+; pwdata[23]$latch                                    ; psel                ; yes                    ;
+; pwdata[24]$latch                                    ; psel                ; yes                    ;
+; pwdata[25]$latch                                    ; psel                ; yes                    ;
+; pwdata[26]$latch                                    ; psel                ; yes                    ;
+; pwdata[27]$latch                                    ; psel                ; yes                    ;
+; pwdata[28]$latch                                    ; psel                ; yes                    ;
+; pwdata[29]$latch                                    ; psel                ; yes                    ;
+; pwdata[30]$latch                                    ; psel                ; yes                    ;
+; pwdata[31]$latch                                    ; psel                ; yes                    ;
+; Number of user-specified and inferred latches = 69  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; present_state~2                       ; Lost fanout        ;
+; present_state~3                       ; Lost fanout        ;
+; present_state~4                       ; Lost fanout        ;
+; Total Number of Removed Registers = 3 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |apb_fsm ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; ST_IDLE        ; 000   ; Unsigned Binary                                ;
+; ST_WWAIT       ; 001   ; Unsigned Binary                                ;
+; ST_READ        ; 010   ; Unsigned Binary                                ;
+; ST_WRITE       ; 011   ; Unsigned Binary                                ;
+; ST_WRITEP      ; 100   ; Unsigned Binary                                ;
+; ST_RENABLE     ; 101   ; Unsigned Binary                                ;
+; ST_WENABLE     ; 110   ; Unsigned Binary                                ;
+; ST_WENABLEP    ; 111   ; Unsigned Binary                                ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 8                           ;
+;     plain             ; 8                           ;
+; arriav_lcell_comb     ; 152                         ;
+;     normal            ; 152                         ;
+;         0 data inputs ; 2                           ;
+;         2 data inputs ; 70                          ;
+;         3 data inputs ; 74                          ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 3                           ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 272                         ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.55                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Thu Mar 18 10:14:39 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off apb_fsm -c apb_fsm
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /maven silicon/project/rtl/apb_fsm.v
+    Info (12023): Found entity 1: apb_fsm File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 1
+Info (12127): Elaborating entity "apb_fsm" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at apb_fsm.v(52): inferring latch(es) for variable "penable", which holds its previous value in one or more paths through the always construct File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (10240): Verilog HDL Always Construct warning at apb_fsm.v(52): inferring latch(es) for variable "psel", which holds its previous value in one or more paths through the always construct File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (10240): Verilog HDL Always Construct warning at apb_fsm.v(52): inferring latch(es) for variable "paddr", which holds its previous value in one or more paths through the always construct File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (10240): Verilog HDL Always Construct warning at apb_fsm.v(52): inferring latch(es) for variable "pwdata", which holds its previous value in one or more paths through the always construct File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (10240): Verilog HDL Always Construct warning at apb_fsm.v(52): inferring latch(es) for variable "next_state", which holds its previous value in one or more paths through the always construct File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (10240): Verilog HDL Always Construct warning at apb_fsm.v(52): inferring latch(es) for variable "hready_out", which holds its previous value in one or more paths through the always construct File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (10240): Verilog HDL Always Construct warning at apb_fsm.v(52): inferring latch(es) for variable "pwrite", which holds its previous value in one or more paths through the always construct File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwrite" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "hready_out" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "next_state.ST_WENABLEP" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "next_state.ST_WENABLE" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "next_state.ST_RENABLE" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "next_state.ST_WRITEP" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "next_state.ST_WRITE" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "next_state.ST_READ" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "next_state.ST_WWAIT" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "next_state.ST_IDLE" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[0]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[1]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[2]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[3]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[4]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[5]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[6]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[7]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[8]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[9]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[10]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[11]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[12]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[13]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[14]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[15]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[16]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[17]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[18]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[19]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[20]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[21]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[22]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[23]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[24]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[25]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[26]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[27]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[28]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[29]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[30]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "pwdata[31]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[0]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[1]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[2]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[3]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[4]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[5]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[6]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[7]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[8]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[9]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[10]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[11]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[12]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[13]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[14]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[15]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[16]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[17]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[18]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[19]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[20]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[21]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[22]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[23]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[24]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[25]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[26]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[27]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[28]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[29]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[30]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "paddr[31]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "psel[0]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "psel[1]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "psel[2]" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Info (10041): Inferred latch for "penable" at apb_fsm.v(52) File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (14026): LATCH primitive "next_state.ST_IDLE_916" is permanently enabled File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (14026): LATCH primitive "next_state.ST_WWAIT_888" is permanently enabled File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (14026): LATCH primitive "next_state.ST_READ_860" is permanently enabled File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (14026): LATCH primitive "next_state.ST_WRITE_832" is permanently enabled File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (14026): LATCH primitive "next_state.ST_WRITEP_804" is permanently enabled File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (14026): LATCH primitive "next_state.ST_RENABLE_776" is permanently enabled File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (14026): LATCH primitive "next_state.ST_WENABLE_748" is permanently enabled File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (14026): LATCH primitive "next_state.ST_WENABLEP_720" is permanently enabled File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+Warning (13012): Latch psel[0]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch psel[1]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch psel[2]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[0]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[1]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[2]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[3]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[4]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[5]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[6]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[7]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[8]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[9]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[10]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[11]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[12]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[13]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[14]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[15]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[16]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[17]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[18]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[19]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[20]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[21]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[22]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[23]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[24]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[25]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[26]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[27]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[28]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[29]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[30]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch paddr[31]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[0]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[1]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[2]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[3]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[4]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[5]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[6]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[7]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[8]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[9]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[10]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[11]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[12]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[13]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[14]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[15]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[16]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[17]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[18]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[19]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[20]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[21]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[22]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[23]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[24]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[25]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[26]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[27]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[28]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[29]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[30]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13012): Latch pwdata[31]$latch has unsafe behavior File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal present_state.ST_WWAIT File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 41
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "hresp[0]" is stuck at GND File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 29
+    Warning (13410): Pin "hresp[1]" is stuck at GND File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 29
+    Warning (13410): Pin "hready_out" is stuck at VCC File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 30
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 64 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "hwdata_1[0]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[1]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[2]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[3]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[4]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[5]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[6]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[7]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[8]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[9]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[10]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[11]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[12]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[13]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[14]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[15]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[16]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[17]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[18]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[19]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[20]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[21]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[22]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[23]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[24]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[25]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[26]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[27]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[28]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[29]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[30]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "hwdata_1[31]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[0]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[1]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[2]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[3]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[4]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[5]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[6]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[7]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[8]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[9]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[10]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[11]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[12]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[13]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[14]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[15]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[16]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[17]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[18]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[19]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[20]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[21]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[22]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[23]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[24]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[25]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[26]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[27]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[28]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[29]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[30]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+    Warning (15610): No output dependent on input pin "haddr_0[31]" File: D:/Maven Silicon/Project/rtl/apb_fsm.v Line: 22
+Info (21057): Implemented 422 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 168 input pins
+    Info (21059): Implemented 104 output pins
+    Info (21061): Implemented 150 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 219 warnings
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Thu Mar 18 10:14:56 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:28
+
+

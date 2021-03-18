@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 100C Model Setup 'hclk'
+Slack : -1.155
+TNS   : -4.447
+
+Type  : Slow 900mV 100C Model Setup 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : -0.753
+TNS   : -33.519
+
+Type  : Slow 900mV 100C Model Hold 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'hclk'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'hclk'
+Slack : -2.846
+TNS   : -170.969
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'hclk'
+Slack : -1.050
+TNS   : -3.830
+
+Type  : Slow 900mV -40C Model Setup 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : -0.736
+TNS   : -32.955
+
+Type  : Slow 900mV -40C Model Hold 'hclk'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'hclk'
+Slack : -2.846
+TNS   : -171.094
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'hclk'
+Slack : -0.105
+TNS   : -0.193
+
+Type  : Fast 900mV -40C Model Setup 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : 0.118
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'hclk'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'hclk'
+Slack : -2.846
+TNS   : -72.714
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'apb_fsm:M2|present_state.ST_WENABLEP'
+Slack : 0.468
+TNS   : 0.000
+
+------------------------------------------------------------

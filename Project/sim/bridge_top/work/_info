@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vahb_slave
+Z0 !s110 1616043243
+!i10b 1
+!s100 IWUY5dU6IKR:DR^bZi1WX1
+Iz0j_D8eB_bzDDB?]D0eSJ2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Maven Silicon/Project/sim/bridge_top
+w1615659971
+8D:/Maven Silicon/Project/rtl/ahb_slave.v
+FD:/Maven Silicon/Project/rtl/ahb_slave.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1616043243.000000
+!s107 D:/Maven Silicon/Project/rtl/ahb_slave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Project/rtl/ahb_slave.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vapb_fsm
+R0
+!i10b 1
+!s100 Rk1V9[JfQ>7Mbe`21JZjE0
+IWFRXlMkPDab5PKLmc6oTe0
+R1
+R2
+w1616041946
+8D:/Maven Silicon/Project/rtl/apb_fsm.v
+FD:/Maven Silicon/Project/rtl/apb_fsm.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Maven Silicon/Project/rtl/apb_fsm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Project/rtl/apb_fsm.v|
+!i113 1
+R5
+R6
+vbridge_top
+!s110 1616043244
+!i10b 1
+!s100 ZYRfW_eH:n0PjfCWNYXl;2
+IKMJ;LJ7o2a=CPDkh^Z>O52
+R1
+R2
+w1616043006
+8D:/Maven Silicon/Project/rtl/bridge_top.v
+FD:/Maven Silicon/Project/rtl/bridge_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Maven Silicon/Project/rtl/bridge_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Maven Silicon/Project/rtl/bridge_top.v|
+!i113 1
+R5
+R6

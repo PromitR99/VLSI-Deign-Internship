@@ -1,0 +1,22 @@
+{D:/Maven Silicon/Project/rtl/ahb_slave.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Project/rtl/ahb_slave.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ahb_slave
+
+Top level modules:
+	ahb_slave
+
+} {} {}} {D:/Maven Silicon/Project/rtl/bridge_top.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Project/rtl/bridge_top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bridge_top
+
+Top level modules:
+	bridge_top
+
+} {} {}} {D:/Maven Silicon/Project/rtl/apb_fsm.v} {1 {vlog -work work -stats=none {D:/Maven Silicon/Project/rtl/apb_fsm.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module apb_fsm
+
+Top level modules:
+	apb_fsm
+
+} {} {}}
