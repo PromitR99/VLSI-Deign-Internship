@@ -49,14 +49,16 @@ module apb_fsm(hclk,
       present_state <= next_state;
   end
 
-  always@(present_state, valid, hwrite, hwrite_reg, hwdata_0, haddr_1, temp_sel)
+  always@(present_state, hclk, hresetn, valid, hwrite, hwrite_reg, hwdata_0, hwdata_1, haddr_0, haddr_1, temp_sel)
   begin
+    pwrite = 0;
+    penable = 0;
+    psel = 0;
+    paddr = 0;
+    hready_out = 0;
     case (present_state)
       ST_IDLE     : begin
-                    penable = 1'b0;
-                    psel = 3'b000;
-                    paddr = 32'h0000_0000;
-                    pwdata = 32'h0000_0000;
+                    hready_out = 1;
                     if (valid==1 && hwrite==1) 
                       next_state=ST_WWAIT;
                     else if (valid==1 && hwrite==0)
@@ -65,47 +67,46 @@ module apb_fsm(hclk,
                       next_state=ST_IDLE;
                     end
       ST_WWAIT    : begin
-                    hready_out = 1'b1;
+                    hready_out = 1;
                     if (valid==1) 
                       next_state=ST_WRITEP;
                     else if (valid==0)
                       next_state=ST_WRITE;
                     end
       ST_READ     : begin
-                    pwrite = 1'b0;
-                    penable = 1'b0;
+                    pwrite = 0;
+                    penable = 0;
                     psel = temp_sel;
                     paddr = haddr_1;
-                    pwdata = hwdata_0;
-                    hready_out = 1'b1;
+                    hready_out = 0;
                     next_state=ST_RENABLE;
                     end
       ST_WRITE    : begin
-                    pwrite = 1'b1;
-                    penable = 1'b0;
+                    pwrite = 1;
+                    penable = 0;
                     psel = temp_sel;
-                    paddr = haddr_1;
+                    paddr = haddr_0;
                     pwdata = hwdata_0;
-                    hready_out = 1'b1;
+                    hready_out = 1;
                     if (valid==1) 
                       next_state=ST_WENABLEP;
                     else if (valid==0)
                       next_state=ST_WENABLE;
                     end
       ST_WRITEP   : begin
-                    pwrite = 1'b1;
+                    pwrite = 1;
+                    penable = 0; 
                     psel = temp_sel;
-                    paddr = haddr_1;
+                    paddr = haddr_0;
                     pwdata = hwdata_0;
+                    hready_out = 1;
                     next_state=ST_WENABLEP;
                     end
       ST_RENABLE  : begin
-                    pwrite = 1'b0;
-                    penable = 1'b1;
+                    penable = 1;
                     psel = temp_sel;
                     paddr = haddr_1;
-                    pwdata = hwdata_0;
-                    hready_out = 1'b1;
+                    hready_out = 1;
                     if (valid==1 && hwrite==1) 
                       next_state=ST_WWAIT;
                     else if (valid==1 && hwrite==0)
@@ -114,12 +115,12 @@ module apb_fsm(hclk,
                       next_state=ST_IDLE;
                     end
       ST_WENABLE  : begin
-                    pwrite = 1'b1;
-                    penable = 1'b1;
+                    pwrite = 1;
+                    penable = 1;
                     psel = temp_sel;
-                    paddr = haddr_1;
+                    paddr = haddr_0;
                     pwdata = hwdata_0;
-                    hready_out = 1'b1;
+                    hready_out = 1;
                     if (valid==1 && hwrite==1) 
                       next_state=ST_WWAIT;
                     else if (valid==1 && hwrite==0)
@@ -127,12 +128,18 @@ module apb_fsm(hclk,
                     else if (valid==0)
                       next_state=ST_IDLE;
                     end
-      ST_WENABLEP : if (valid==1 && hwrite_reg==1) 
+      ST_WENABLEP : begin
+                    pwrite = 1;
+                    penable = 1;
+                    psel = temp_sel;
+                    hready_out = 1;
+                    if (valid==1 && hwrite_reg==1) 
                       next_state=ST_WRITEP;
                     else if (valid==0 && hwrite_reg==1)
                       next_state=ST_WRITE;
                     else if (hwrite_reg==0)
                       next_state=ST_READ;
+                    end
       default     : next_state=ST_IDLE;
     endcase
   end

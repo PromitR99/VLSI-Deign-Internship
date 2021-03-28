@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vapb_interface
+!s110 1616699133
+!i10b 1
+!s100 H[c72XFaX_fPM=?FIm3aL2
+IhocGmf`SP:G:3]HDl5ZF^3
+VDg1SIo80bB@j0V0VzS_@n1
+dD:/Maven Silicon/Project/sim/apb_interface
+w1616699128
+8D:\Maven Silicon\Project\tb\apb_interface.v
+FD:\Maven Silicon\Project\tb\apb_interface.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1616699133.000000
+!s107 D:\Maven Silicon\Project\tb\apb_interface.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Maven Silicon\Project\tb\apb_interface.v|
+!i113 1
+o-work work
+tCvgOpt 0
