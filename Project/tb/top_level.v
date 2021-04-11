@@ -61,12 +61,7 @@ module top_level();
     hresetn = 1;
     #cycle;
     hresetn = 0;
-    #(2*cycle);
-    hresetn = 1;
-    #cycle;
-    hresetn = 0;
-    #(5*cycle);
-    $finish;
+
   end
 
 endmodule

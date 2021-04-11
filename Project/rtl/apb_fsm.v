@@ -44,20 +44,25 @@ module apb_fsm(hclk,
   always@(posedge hclk)
   begin
     if(hresetn)
+      begin
+      pwrite = 0;
+      penable = 0;
+      psel = 0;
+      paddr = 0;
+      pwdata = 0;
+      hready_out = 0;
       present_state <= ST_IDLE;
+      end
     else
       present_state <= next_state;
   end
 
-  always@(present_state, hclk, hresetn, valid, hwrite, hwrite_reg, hwdata_0, hwdata_1, haddr_0, haddr_1, temp_sel)
+  always@(*)
   begin
-    pwrite = 0;
-    penable = 0;
-    psel = 0;
-    paddr = 0;
-    hready_out = 0;
     case (present_state)
       ST_IDLE     : begin
+                    penable = 0;
+                    psel = temp_sel;
                     hready_out = 1;
                     if (valid==1 && hwrite==1) 
                       next_state=ST_WWAIT;
@@ -67,6 +72,7 @@ module apb_fsm(hclk,
                       next_state=ST_IDLE;
                     end
       ST_WWAIT    : begin
+                    psel = temp_sel;
                     hready_out = 1;
                     if (valid==1) 
                       next_state=ST_WRITEP;
@@ -77,7 +83,7 @@ module apb_fsm(hclk,
                     pwrite = 0;
                     penable = 0;
                     psel = temp_sel;
-                    paddr = haddr_1;
+                    paddr = haddr_0;
                     hready_out = 0;
                     next_state=ST_RENABLE;
                     end
@@ -85,7 +91,7 @@ module apb_fsm(hclk,
                     pwrite = 1;
                     penable = 0;
                     psel = temp_sel;
-                    paddr = haddr_0;
+                    paddr = haddr_1;
                     pwdata = hwdata_0;
                     hready_out = 1;
                     if (valid==1) 
@@ -97,7 +103,7 @@ module apb_fsm(hclk,
                     pwrite = 1;
                     penable = 0; 
                     psel = temp_sel;
-                    paddr = haddr_0;
+                    paddr = haddr_1;
                     pwdata = hwdata_0;
                     hready_out = 1;
                     next_state=ST_WENABLEP;
@@ -118,7 +124,7 @@ module apb_fsm(hclk,
                     pwrite = 1;
                     penable = 1;
                     psel = temp_sel;
-                    paddr = haddr_0;
+                    paddr = haddr_1;
                     pwdata = hwdata_0;
                     hready_out = 1;
                     if (valid==1 && hwrite==1) 

@@ -41,17 +41,12 @@ module top_level();
                   .hresp(hresp),
                   .hready_out(hready_out));
 
-  apb_interface DUT3(.pwrite(pwrite),
-                     .penable(penable),
+  apb_interface DUT3(.pwrite(pwrite), .penable(penable),
                      .psel(psel),
-                     .paddr(paddr),
-                     .pwdata(pwdata),
-                     .pwrite_out(pwrite_out),
-                     .penable_out(penable_out),
+                     .paddr(paddr), .pwdata(pwdata),
+                     .pwrite_out(pwrite_out), .penable_out(penable_out),
                      .psel_out(psel_out),
-                     .paddr_out(paddr_out),
-                     .pwdata_out(pwdata_out),
-                     .prdata(prdata));
+                     .paddr_out(paddr_out), .pwdata_out(pwdata_out), .prdata(prdata));
 
   initial
   begin
@@ -66,12 +61,14 @@ module top_level();
     hresetn = 1;
     #cycle;
     hresetn = 0;
+
     #(2*cycle);
     hresetn = 1;
     #cycle;
     hresetn = 0;
-    #(5*cycle);
-    $finish;
+//  #(5*cycle);
+//  $finish;
+
   end
 
 endmodule
